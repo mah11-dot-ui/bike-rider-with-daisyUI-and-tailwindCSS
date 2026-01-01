@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike-rider</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+ <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+           "bike-primary": 'rgb(29 78 216 / var(--tw-text-opacity, 1))',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="m-0 p-0 outline-0">
+    <header>
+        <nav class="navbar bg-base-100 shadow-lg">
+            <div class="navbar-start">
+                <a class="btn btn-ghost normal-case text-xl font-bold">Bike <span class="text-blue-700">rider</span></a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn bg-blue-700 text-white hover:bg-blue-800">Get Started</a>
+            </div>
+        </nav>
+        <main>
+            <section id="home" class="p-8">
+               <div>
+                
+               </div>
+                <div>
+                  <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmlrZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="Bike Image" class="w-full h-auto mt-6 rounded-lg shadow-md">
+                </div>
+            </section>
+        </main>
+    </header>
+</body>
+</html>
