@@ -6,17 +6,6 @@
     <title>Bike-rider</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
- <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-           "bike-primary": 'rgb(29 78 216 / var(--tw-text-opacity, 1))',
-          }
-        }
-      }
-    }
-  </script>
 </head>
 <body class="m-0 p-0 outline-0">
     <header>
@@ -37,15 +26,116 @@
             </div>
         </nav>
         <main>
-            <section id="home" class="p-8">
-               <div>
-                
-               </div>
-                <div>
-                  <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmlrZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="Bike Image" class="w-full h-auto mt-6 rounded-lg shadow-md">
-                </div>
+            <section id="home" class="flex justify-between items-center p-8">
+              <div>
+                <h1 class="text-5xl font-bold mb-4">Welcome to Bike-rider</h1>
+             <p class="text-lg">Your ultimate destination for all things biking.</p>
+             <p class="text-gray-700">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium voluptas minus facilis nisi, consectetur voluptatum! Impedit voluptatem vero, molestias porro ex nobis ullam magnam modi suscipit eos harum iusto nostrum.</p>
+             <br>
+             <button class="btn bg-blue-700 text-white hover:bg-blue-800">Get Started</button>
+              </div>
+             <div>
+              <img src="images/bike.png" width="800" alt="">
+             </div>
             </section>
         </main>
     </header>
+    <main>
+      <section>
+        <h1 class="text-4xl font-bold mb-16 text-center">Our Products</h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure><img src="images/cards/bike(1).jpg" alt="Bike 1" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Mountain Bike</h2>
+              <p>Perfect for off-road adventures.</p>
+              <div class="card-actions justify-end">
+                <button class="btn bg-blue-700 text-white hover:bg-blue-800">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure><img src="images/cards/bike(1).jpg" alt="Bike 2" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Road Bike</h2>
+              <p>Designed for speed on paved roads.</p>
+              <div class="card-actions justify-end">
+                <button class="btn bg-blue-700 text-white hover:bg-blue-800">Buy Now</button>
+              </div>
+            </div>
+          </div> 
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure><img src="images/cards/bike(1).jpg" alt="Bike 3" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Hybrid Bike</h2>
+              <p>A versatile choice for various terrains.</p>
+              <div class="card-actions justify-end">
+                <button class="btn bg-blue-700 text-white hover:bg-blue-800">Buy Now</button>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section>
+        <h1 class="text-4xl font-bold mt-16 mb-16 text-center">Contact Us</h1>
+        <form id="contactform" class="max-w-lg shadow-lg rounded-xl p-6 border border-gray-300 mx-auto">
+          <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Name</label>
+            <input id="nameinput" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Your Name">
+          </div>
+          <div class="mb-4">
+            <label id="emailinput" class="block text-gray-700 text-sm font-bold mb-2" for="email">Email</label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Your Email">
+          </div>
+          <div class="mb-4">
+            <label id="messageinput" class="block text-gray-700 text-sm font-bold mb-2" for="message">Message</label>
+            <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" rows="4" placeholder="Your Message"></textarea>
+          </div>
+          <div class="flex items-center justify-between">
+            <button class="btn bg-blue-700 text-white hover:bg-blue-800" type="submit">Send Message</button>
+      </section>
+      <section>
+        <footer class="footer mt-32 bg-base-200 text-base-content p-10">
+          <nav>
+    <h1 class="text-2xl font-bold">Bike <span class="text-blue-700">Rider</span></h1>
+          </nav>
+  <nav>
+    <h6 class="footer-title">Services</h6>
+    <a class="link link-hover">Branding</a>
+    <a class="link link-hover">Design</a>
+    <a class="link link-hover">Marketing</a>
+    <a class="link link-hover">Advertisement</a>
+  </nav>
+  <nav>
+    <h6 class="footer-title">Company</h6>
+    <a class="link link-hover">About us</a>
+    <a class="link link-hover">Contact</a>
+    <a class="link link-hover">Jobs</a>
+    <a class="link link-hover">Press kit</a>
+  </nav>
+  <nav>
+    <h6 class="footer-title">Legal</h6>
+    <a class="link link-hover">Terms of use</a>
+    <a class="link link-hover">Privacy policy</a>
+    <a class="link link-hover">Cookie policy</a>
+  </nav>
+  <form>
+    <h6 class="footer-title">Newsletter</h6>
+    <fieldset class="form-control w-80">
+      <label class="label">
+        <span class="label-text">Enter your email address</span>
+      </label>
+      <div class="join">
+        <input
+          type="text"
+          placeholder="username@site.com"
+          class="input input-bordered join-item" />
+        <button class="btn btn-primary join-item">Subscribe</button>
+      </div>
+    </fieldset>
+  </form>
+</footer>
+      </section>
+      <script src="js/rider.js"></script>
+    </main>
 </body>
 </html>
